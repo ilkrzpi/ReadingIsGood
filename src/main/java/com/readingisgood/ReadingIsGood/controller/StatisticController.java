@@ -19,10 +19,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/statistics")
 public class StatisticController {
-    private StatisticService statisticService;
+    private final StatisticService statisticService;
 
-    @GetMapping
-    public ResponseEntity<List<StatisticEntity>> getOrderByCustomerId(@RequestParam Long customerId)
+    @GetMapping(value = "/customerId/{customerId}")
+    public ResponseEntity<List<StatisticEntity>> getOrderByCustomerId(@PathVariable @NotNull Long customerId)
     {
         List<StatisticEntity> statisticEntityList = statisticService.getOrderByCustomerId(customerId);
         return new ResponseEntity<List<StatisticEntity>>(statisticEntityList, HttpStatus.OK);

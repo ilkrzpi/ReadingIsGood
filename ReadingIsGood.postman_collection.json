@@ -1,0 +1,379 @@
+{
+	"id": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+	"name": "ReadingIsGood",
+	"description": "Reading Is Good",
+	"order": [],
+	"folders": [
+		{
+			"name": "Book",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"order": [
+				"c18f32ca-132a-20a1-44f6-a1e12a8a4445",
+				"94ab65dd-5a06-250b-0bd2-90f9dadf9f0a",
+				"a5bdc96c-a03f-3a6e-370e-435cebb26996"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "761d311f-799f-05a9-4678-a516c4b2e764"
+		},
+		{
+			"name": "Customer",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"order": [
+				"fdf28c64-5ac9-db8d-8c3b-c97d279965b7",
+				"ffbd5951-b05e-ea39-1675-30b6c577c1c6",
+				"5a228ad7-84be-0bc1-db61-311361062a5b",
+				"7544a306-fbc9-1570-dd6c-58e856b17722",
+				"b5c28c92-84b7-1480-cd1d-4679fc739f0b"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "0f70ab40-8e7d-8011-bab8-84a551987097"
+		},
+		{
+			"name": "Order",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"order": [
+				"4d2925f4-a36f-b792-c434-5a4b8c21eae8"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "788d0809-adf9-0096-61b7-a55bb90bbc62"
+		},
+		{
+			"name": "Statistic",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"order": [
+				"e3d4b93f-36b0-d3b5-cabd-44f9ab457931"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "9f951a3d-ef77-39d1-dd04-b257c7ca2f2e"
+		}
+	],
+	"folders_order": [
+		"0f70ab40-8e7d-8011-bab8-84a551987097",
+		"761d311f-799f-05a9-4678-a516c4b2e764",
+		"788d0809-adf9-0096-61b7-a55bb90bbc62",
+		"9f951a3d-ef77-39d1-dd04-b257c7ca2f2e"
+	],
+	"timestamp": 1622928280636,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "4d2925f4-a36f-b792-c434-5a4b8c21eae8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/orders",
+			"folder": "0f70ab40-8e7d-8011-bab8-84a551987097",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623105897220,
+			"name": "Create Order",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"responses": [],
+			"rawModeData": "{\n    \n    \n        \"customerId\": 1,\n        \"bookId\": 2,\n        \"amount\": 3,\n        \"piece\": 1\n    \n}"
+		},
+		{
+			"id": "5a228ad7-84be-0bc1-db61-311361062a5b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623103242211,
+			"name": "Create Customer Invalid Email",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"responses": [],
+			"rawModeData": "{\n    \n    \n        \"name\": \"customer\",\n        \"email\": \"@b.com\"\n    \n}"
+		},
+		{
+			"id": "7544a306-fbc9-1570-dd6c-58e856b17722",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623103236726,
+			"name": "Create Customer Name Empty",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"responses": [],
+			"rawModeData": "{\n    \n    \n        \"name\": \"\",\n        \"email\": \"a@a.com\"\n    \n}"
+		},
+		{
+			"id": "94ab65dd-5a06-250b-0bd2-90f9dadf9f0a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/books/bookId/1/stock/3",
+			"folder": "761d311f-799f-05a9-4678-a516c4b2e764",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623104568487,
+			"name": "Update Stock",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"responses": [],
+			"rawModeData": "{\n    \n    \n        \"name\": \"customer\",\n        \"email\": \"b@b.com\"\n    \n}"
+		},
+		{
+			"id": "a5bdc96c-a03f-3a6e-370e-435cebb26996",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/books",
+			"folder": "761d311f-799f-05a9-4678-a516c4b2e764",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623103202996,
+			"name": "Create Book Negative Stock",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"responses": [],
+			"rawModeData": "{\n    \n      \n        \"name\": \"book\",\n        \"price\": 10,\n        \"stock\": -1\n    \n}"
+		},
+		{
+			"id": "b5c28c92-84b7-1480-cd1d-4679fc739f0b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get Customer",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622973148939,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "b5c28c92-84b7-1480-cd1d-4679fc739f0b",
+			"folder": "0f70ab40-8e7d-8011-bab8-84a551987097",
+			"rawModeData": "{\n    \n    \n        \"id\": 3,\n        \"name\": \"1\",\n        \"email\": \"2\"\n    \n}"
+		},
+		{
+			"id": "c18f32ca-132a-20a1-44f6-a1e12a8a4445",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/books",
+			"folder": "761d311f-799f-05a9-4678-a516c4b2e764",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623104551577,
+			"name": "Create Book",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"responses": [],
+			"rawModeData": "{\n    \n    \n        \"name\": \"book\",\n        \"price\": 10,\n        \"stock\": 15\n    \n}"
+		},
+		{
+			"id": "e3d4b93f-36b0-d3b5-cabd-44f9ab457931",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/statistics/customerId/1",
+			"folder": "9f951a3d-ef77-39d1-dd04-b257c7ca2f2e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623105891162,
+			"name": "Get Customer Order Statistic",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"responses": [],
+			"rawModeData": "{\n    \n    \n        \"id\": 3,\n        \"name\": \"1\",\n        \"email\": \"2\"\n    \n}"
+		},
+		{
+			"id": "fdf28c64-5ac9-db8d-8c3b-c97d279965b7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers",
+			"folder": "0f70ab40-8e7d-8011-bab8-84a551987097",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623101879330,
+			"name": "Create Customer",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"responses": [],
+			"rawModeData": "{\n    \n    \n        \"name\": \"customer\",\n        \"email\": \"a@a.com\"\n    \n}"
+		},
+		{
+			"id": "ffbd5951-b05e-ea39-1675-30b6c577c1c6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623103245918,
+			"name": "Create Customer Duplicate Email",
+			"description": "",
+			"collectionId": "a47becef-c94f-7fdf-181a-8f2c2820ae9a",
+			"responses": [],
+			"rawModeData": "\n    {\n        \"name\": \"customer\",\n        \"email\": \"a@a.com\"\n    }\n"
+		}
+	]
+}

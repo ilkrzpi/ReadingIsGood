@@ -22,7 +22,6 @@ public class BookEntity {
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Long id;
 
-    @Column(unique = true)
     private String name;
 
     @NotNull

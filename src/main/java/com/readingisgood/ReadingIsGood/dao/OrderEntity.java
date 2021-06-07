@@ -3,6 +3,8 @@ package com.readingisgood.ReadingIsGood.dao;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -12,6 +14,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@EntityListeners(AuditingEntityListener.class)
 @Table(name = "orders")
 public class OrderEntity {
 
@@ -24,7 +27,8 @@ public class OrderEntity {
 
     private Long bookId;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @CreatedDate
+    @Column(updatable = false)
     private Date createDate;
 
     private BigDecimal amount;

@@ -13,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class StatisticService {
-    private OrderRepository orderRepository;
+    private final OrderRepository orderRepository;
 
     public List<StatisticEntity> getOrderByCustomerId(Long customerId){
         log.info("getOrderByCustomerId", customerId);

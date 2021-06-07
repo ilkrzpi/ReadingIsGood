@@ -49,7 +49,7 @@ public class BookController {
         }
     }
 
-    @PutMapping(value = "/{bookId}/{stock}")
+    @PutMapping(value = "bookId/{bookId}/stock/{stock}")
     public ResponseEntity<BookDTO> updateStock(@PathVariable @NotNull Long bookId, @PathVariable @NotNull Integer stock) {
         try {
             bookService.updateStock(bookId, stock);

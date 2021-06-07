@@ -38,7 +38,7 @@ public class OrderService {
                     log.info("bookNotFound", orderEntity);
                     throw new BookNotFoundException();
                 }
-                bookRepository.updateStock(orderEntity.getBookId(), orderEntity.getPiece());
+                bookRepository.updateStock(orderEntity.getBookId(), bookEntity.getStock()-orderEntity.getPiece());
             }
         }
         return orderRepository.save(orderEntity);
