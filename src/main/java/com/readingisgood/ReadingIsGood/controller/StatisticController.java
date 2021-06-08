@@ -24,9 +24,9 @@ public class StatisticController {
     private final StatisticService statisticService;
 
     @GetMapping(value = "/customerId/{customerId}")
-    public ResponseEntity<List<StatisticEntity>> getOrderByCustomerId(@PathVariable @NotNull Long customerId)
+    public ResponseEntity<List<StatisticEntity>> getStatisticByCustomerId(@PathVariable @NotNull Long customerId)
     {
-        List<StatisticEntity> statisticEntityList = statisticService.getOrderByCustomerId(customerId);
+        List<StatisticEntity> statisticEntityList = statisticService.getStatisticByCustomerId(customerId);
         return new ResponseEntity<List<StatisticEntity>>(statisticEntityList, HttpStatus.OK);
     }
 

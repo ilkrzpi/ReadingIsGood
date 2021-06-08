@@ -1,14 +1,20 @@
 package com.readingisgood.ReadingIsGood.dao;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class StatisticEntity {
-    Integer month;
+    int month;
 
-    Integer totalOrder;
+    Long totalOrder;
 
-    Integer totalBook;
+    Long totalBook;
 
-    Integer totalAmount;
+    BigDecimal totalAmount;
 }
