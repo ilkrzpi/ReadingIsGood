@@ -10,6 +10,7 @@ import com.readingisgood.ReadingIsGood.exception.BookNotFoundException;
 import com.readingisgood.ReadingIsGood.exception.CustomerNotFoundException;
 import com.readingisgood.ReadingIsGood.mapper.OrderMapper;
 import com.readingisgood.ReadingIsGood.service.OrderService;
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -25,6 +26,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/orders")
+@Api(tags = "Order")
 public class OrderController {
     private final OrderService orderService;
     private final OrderMapper orderMapper;

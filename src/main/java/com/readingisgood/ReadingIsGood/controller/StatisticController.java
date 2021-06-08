@@ -4,6 +4,7 @@ import com.readingisgood.ReadingIsGood.dao.OrderEntity;
 import com.readingisgood.ReadingIsGood.dao.StatisticEntity;
 import com.readingisgood.ReadingIsGood.service.OrderService;
 import com.readingisgood.ReadingIsGood.service.StatisticService;
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;
@@ -18,6 +19,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/statistics")
+@Api(tags = "Statistic")
 public class StatisticController {
     private final StatisticService statisticService;
 

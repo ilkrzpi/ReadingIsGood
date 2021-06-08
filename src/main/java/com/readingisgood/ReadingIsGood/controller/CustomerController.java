@@ -4,6 +4,7 @@ import com.readingisgood.ReadingIsGood.dao.CustomerEntity;
 import com.readingisgood.ReadingIsGood.dto.CustomerDTO;
 import com.readingisgood.ReadingIsGood.mapper.CustomerMapper;
 import com.readingisgood.ReadingIsGood.service.CustomerService;
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.hibernate.exception.ConstraintViolationException;
@@ -19,6 +20,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/customers")
+@Api(tags = "Customer")
 public class CustomerController {
     private final CustomerService customerService;
     private final CustomerMapper customerMapper;

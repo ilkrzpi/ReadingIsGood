@@ -4,6 +4,7 @@ import com.readingisgood.ReadingIsGood.dao.BookEntity;
 import com.readingisgood.ReadingIsGood.dto.BookDTO;
 import com.readingisgood.ReadingIsGood.mapper.BookMapper;
 import com.readingisgood.ReadingIsGood.service.BookService;
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import javax.validation.constraints.NotNull;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/books")
+@Api(tags = "Book")
 public class BookController {
 
     private final BookService bookService;
